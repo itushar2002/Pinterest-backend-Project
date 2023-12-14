@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  <% if (nav === true){ %>
+    <div class=" text-black w-full px-10 py-1 flex justify-between items-center bg-white" >
+      <div class="h-[30px] bg-[url('https://imgs.search.brave.com/wVytF6mzOQFCRvu0tF72SJ1tUfHxL72yZhipovLgLjk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTdmY2Q5OTk2/ZTI0YmM0M2M1MmUu/cG5n')] items-center relative mt-1 ml-5 w-[30px] bg-center bg-cover " >
+        <h3 class="text-xl font-semibold text-black px-10 mt-.5 absolute">Pinterest</h3>
+      </div>  
+      <div class="flex items-center justify-center gap-5">
+        <a href="/profile">Profile</a>
+        <a href="/feed">Feed</a>
+         <a class="px-7 py-2 bg-red-700 text-xs text-black rounded-md font-semibold" href="/logout"  >logout</a>
+    </div>
+  </div>
+ <%  } %>
+
+  </body>
+</html>

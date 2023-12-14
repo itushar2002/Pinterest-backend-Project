@@ -1,0 +1,21 @@
+<% include ./partials/header.ejs %>
+
+
+<div class=" w-full h-screen bg-zinc-400 flex items-center justify-center">
+  <div class="w-[30vw]  bg-white px-20 py-5 rounded-md">
+    <div class="h-[50px] bg-[url('https://imgs.search.brave.com/wVytF6mzOQFCRvu0tF72SJ1tUfHxL72yZhipovLgLjk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTdmY2Q5OTk2/ZTI0YmM0M2M1MmUu/cG5n')] mt-1 ml-20 w-[50px] bg-center bg-cover " ></div>
+    <h1
+      class="text-2xl mt-2 mb-5 font-semibold text-zinc-700 tracking-tighter capitalize leading-none text-center">
+      Create new account
+    </h1>
+    <form action="/register" method="post">
+      <input class="w-full  font-semibold border-2  px-4 py-2 mt-3" type="text" name="username" placeholder="username" id="" />
+      <input class="w-full  font-semibold border-2  px-4 py-2 mt-3" type="text" name="fullname" placeholder="Full-name" id="" />
+	  <input class="w-full  font-semibold border-2  px-4 py-2 mt-2" type="email" name="email" placeholder="email" id="" />
+      <input class="w-full  font-semibold border-2 rounded-md px-4 py-2 mt-2" type="password" name="password" placeholder="password" />
+	  <input class="w-full mt-2 border-2 rounded-md px-4 py-2 font-semibold " type="number" name="Contact" id="" placeholder="Contact">
+	  <input class="w-full font-semibold border-2 rounded-full bg-red-600 text-white cursor-pointer py-2 px-5 mt-2" type="submit" value="Create acccount">
+    </form>
+  </div>
+</div>
+  <% include ./partials/footer.ejs %>
